@@ -2,11 +2,8 @@ steps:
 # Step 0 - Build the docker image
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', '', 'us-central1-docker.pkg.dev/mytesting-400910/my-repo:v1','.' ]
-  options:
-    logging: CLOUD_LOGGING_ONLY
+
 
 # Step 1- Push the docker image
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-central1-docker.pkg.dev/mytesting-400910/my-repo:v1']
-  options:
-    logging: CLOUD_LOGGING_ONLY
