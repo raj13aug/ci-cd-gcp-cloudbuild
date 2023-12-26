@@ -1,7 +1,7 @@
 locals {
   services = [
     "sourcerepo.googleapis.com",
-    "cloudbuild.googleapis.com",
+    "sourcerepo.googleapis.com",
   ]
 }
 
